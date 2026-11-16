@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Основные настройки */
+    "target": "ES2020", // Поддержка современных фич JavaScript
+    "module": "esnext", 
+    "lib": ["dom", "dom.iterable", "esnext"], // Библиотеки типов для браузера
+    
+    /* Типы и проверка */
+    "strict": true,                     // Включает все строгие проверки
+    "skipLibCheck": true,               // Пропускаем проверку стандартных библиотек
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Модули и сборка */
+    "moduleResolution": "bundler",       // Для Vite / Webpack 5+
+    "resolveJsonModule": true,          // Позволяет импортировать .json-файлы
+    "isolatedModules": true,            // Важно для Babel/SWC
+    "outDir": "./dist",                 // Папка сборки
+    "rootDir": "./src",                 // Корневая папка проекта
+    
+    /* Настройки для React */
+    "jsx": "react-jsx",         
+    "allowJs": true,              
+    "checkJs": false,                
+    "noEmit": false,            
+    "sourceMap": true                
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
